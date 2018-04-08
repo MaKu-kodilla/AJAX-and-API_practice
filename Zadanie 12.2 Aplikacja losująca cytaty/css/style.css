@@ -26,8 +26,8 @@ header h1 {
     font-size: 22px;
 }
 main .btn {
-    text-align: center;
     margin: 0 auto;
+    text-align: center;
     font-family: 'Gaegu', cursive;
 }
 .btn .trigger {
@@ -35,18 +35,17 @@ main .btn {
     font-size: 26px;
     background-color: lightskyblue;
     border: 1px solid white;
-    color:#f1f1f1;
-    padding: 2px 137px;
+    color: #f1f1f1;
     cursor: pointer;
+    padding: 2px 120px;
 }
 .btn .tweet {
     text-decoration: none;
     font-size: 26px;
     border: 1px solid white;
     cursor: pointer;
-    padding: 2px 160px;
-    color:#f1f1f1;
-
+    color: #f1f1f1;
+    padding: 2px 148px;
 }
 
 
