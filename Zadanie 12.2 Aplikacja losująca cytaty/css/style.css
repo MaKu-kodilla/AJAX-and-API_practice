@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Gaegu|Lora');
+
+body {
+    background-color: lightskyblue;
+    color: #f1f1f1;
+}
+
+header h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+    font-family: 'Lora', serif;
+    text-align: center;
+    text-shadow: 1px 1px white;
+}
+.box {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Gaegu', cursive;
+    padding-bottom: 20px;
+}
+.box h2 {
+    font-size: 32px;
+}
+.box h3 {
+    font-size: 22px;
+}
+main .btn {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Gaegu', cursive;
+}
+.btn .trigger {
+    font-family: 'Gaegu', cursive;
+    font-size: 26px;
+    background-color: lightskyblue;
+    border: 1px solid white;
+    color:#f1f1f1;
+    padding: 2px 137px;
+    cursor: pointer;
+}
+.btn .tweet {
+    text-decoration: none;
+    font-size: 26px;
+    border: 1px solid white;
+    cursor: pointer;
+    padding: 2px 160px;
+    color:#f1f1f1;
+
+}
+
+
