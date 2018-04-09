@@ -31,21 +31,35 @@ main .btn {
     font-family: 'Gaegu', cursive;
 }
 .btn .trigger {
+    
     font-family: 'Gaegu', cursive;
     font-size: 26px;
     background-color: lightskyblue;
     border: 1px solid white;
     color: #f1f1f1;
     cursor: pointer;
-    padding: 2px 120px;
+    padding-bottom: 5px;
+    height: 45px;
+    width: 400px;
+}
+.btn .trigger2 {
+    margin-top: 20px;
+    font-family: 'Gaegu', cursive;
+    font-size: 26px;
+    background-color: lightskyblue;
+    border: 1px solid white;
+    color: #f1f1f1;
+    cursor: pointer;
+    padding-bottom: 5px;
+    height: 45px;
+    width: 400px;
 }
 .btn .tweet {
     text-decoration: none;
-    font-size: 26px;
-    border: 1px solid white;
-    cursor: pointer;
-    color: #f1f1f1;
-    padding: 2px 148px;
+    color: white;
 }
-
+.btn .tweet .fa-twitter {
+    font-size: 26px;
+    padding-right: 10px;
+}
 
