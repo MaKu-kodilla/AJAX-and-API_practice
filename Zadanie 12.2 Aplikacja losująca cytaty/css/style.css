@@ -3,6 +3,7 @@
 body {
     background-color: lightskyblue;
     color: #f1f1f1;
+    width: 1440px;
 }
 
 header h1 {
@@ -13,7 +14,6 @@ header h1 {
     text-shadow: 1px 1px white;
 }
 .box {
-    width: 1200px;
     margin: 0 auto;
     text-align: center;
     font-family: 'Gaegu', cursive;
@@ -62,4 +62,5 @@ main .btn {
     font-size: 26px;
     padding-right: 10px;
 }
+
 
