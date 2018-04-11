@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Gaegu|Lora');
+
+body {
+    background-color: lightskyblue;
+    color: #f1f1f1;
+}
+main {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+header h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+    font-family: 'Lora', serif;
+    text-align: center;
+    text-shadow: 1px 1px white;
+}
+.box {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Gaegu', cursive;
+    padding-bottom: 20px;
+}
+.box h2 {
+    font-size: 32px;
+}
+.box h3 {
+    font-size: 22px;
+}
+
+main .btn {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Gaegu', cursive;
+}
+.btn .trigger {
+    
+    font-family: 'Gaegu', cursive;
+    font-size: 26px;
+    background-color: lightskyblue;
+    border: 1px solid white;
+    color: #f1f1f1;
+    cursor: pointer;
+    padding-bottom: 5px;
+    width: 35%;
+}
+.btn .trigger2 {
+    margin-top: 20px;
+    font-family: 'Gaegu', cursive;
+    font-size: 26px;
+    background-color: lightskyblue;
+    border: 1px solid white;
+    color: #f1f1f1;
+    cursor: pointer;
+    padding-bottom: 5px;
+    width: 35%;
+}
+.btn .tweet {
+    text-decoration: none;
+    color: white;
+}
+.btn .tweet .fa-twitter {
+    font-size: 26px;
+    padding-right: 10px;
+}
+
+@media (max-width: 700px) {
+    .btn .trigger, .btn .trigger2 {
+        width: 70%;
+    }
+}
