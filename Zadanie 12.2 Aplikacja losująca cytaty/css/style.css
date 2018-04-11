@@ -4,6 +4,8 @@ body {
     background-color: lightskyblue;
     color: #f1f1f1;
     width: 1440px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 header h1 {
@@ -25,6 +27,7 @@ header h1 {
 .box h3 {
     font-size: 22px;
 }
+
 main .btn {
     margin: 0 auto;
     text-align: center;
