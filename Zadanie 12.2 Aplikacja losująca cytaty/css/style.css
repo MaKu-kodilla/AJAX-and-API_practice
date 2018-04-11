@@ -3,11 +3,12 @@
 body {
     background-color: lightskyblue;
     color: #f1f1f1;
-    width: 1440px;
+}
+main {
+    max-width: 1440px;
     width: 100%;
     margin: 0 auto;
 }
-
 header h1 {
     font-size: 40px;
     padding-bottom: 20px;
@@ -42,8 +43,7 @@ main .btn {
     color: #f1f1f1;
     cursor: pointer;
     padding-bottom: 5px;
-    height: 45px;
-    width: 400px;
+    width: 35%;
 }
 .btn .trigger2 {
     margin-top: 20px;
@@ -54,8 +54,7 @@ main .btn {
     color: #f1f1f1;
     cursor: pointer;
     padding-bottom: 5px;
-    height: 45px;
-    width: 400px;
+    width: 35%;
 }
 .btn .tweet {
     text-decoration: none;
@@ -66,4 +65,8 @@ main .btn {
     padding-right: 10px;
 }
 
-
+@media (max-width: 700px) {
+    .btn .trigger, .btn .trigger2 {
+        width: 70%;
+    }
+}
