@@ -1,18 +1,6 @@
-// ZMIENNIE WYKORZYSTYWANE DO KOMUNIKACJI Z SERWEREM
-var baseUrl = 'https://kodilla.com/pl/bootcamp-api';
-var myHeaders = {
-  'X-Client-Id': 'X-Client-Id',
-  'X-Auth-Token': 'X-Auth-Token'
-};
-
-// FUNKCJA ODPYTUJĄCA SERWER O ZASÓB TABLICY
-$.ajax({
-    url: baseUrl + '/board',
-    method: 'GET',
-    success: function(response) {
+SendAjax('/board', 'GET', null, function(response) {
       setupColumns(response.columns);
-    }
-});
+    });
 
 //TWORZENIE KOLUMNY ORAZ DODAWANIE JEJ DO TABLICY
 function setupColumns(columns) {
