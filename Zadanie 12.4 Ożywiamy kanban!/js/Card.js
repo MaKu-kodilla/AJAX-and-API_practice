@@ -1,30 +1,37 @@
-// KLASA KANBAN CARD
 function Card(id, name) {
+	var self  = this;
+	
 	this.id = id;
 	this.name = name || 'No name given';
-	this.element = createCard();
-
+	this.$element = createCard();
+	
 	function createCard() {
-		var card = $('<li class="card"></li>');
-		var cardDeleteBtn = $('<button class="btn-delete">x</button>');
-		var cardDescription = $('<p class="card-description"></p>');
-		
-		cardDeleteBtn.click(function(){
-			self.removeCard();
-		});
-		
-		card.append(cardDeleteBtn);
-		cardDescription.text(self.name);
-		card.append(cardDescription)
-		return card;
+		 var $card = $('<li>').addClass('card');
+		 var $cardDescription = $('<p>').addClass('card-description').text(self.name);
+		 var $cardDeleteButton = $('<button>').addClass('card-delete btn');
+		 var $cardDeleteSymbol = $('<span  class="glyphicon glyphicon-remove" aria-hidden="true" aria-hidden="true"></span>');
+		 
+		 $cardDeleteButton.click(function(){
+			 self.deleteCard();
+		 });
+		 
+		 $cardDeleteButton.append($cardDeleteSymbol);
+		 $card.append($cardDeleteButton).append($cardDescription);
+		 
+		 console.log($card);
+		 return $card;
 	}
 }
-Card.prototype = {
-	removeCard: function() {
-		var self = this;
 
-		SendAjax('/card/' + self.id, 'DELETE', null, function(){
-			self.$element.remove();
-		});
-	}
+Card.prototype = {
+		removeCard: function() {
+			var self = this;
+			$.ajax({
+			url: baseUrl + '/card/' + self.id,
+			method: 'DELETE',
+			success: function(){
+				self.$element.remove();
+				}
+			});
+		}
 }
