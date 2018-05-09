@@ -12,7 +12,7 @@ function Card(id, name) {
 		 var $cardDeleteSymbol = $('<span  class="glyphicon glyphicon-remove" aria-hidden="true" aria-hidden="true"></span>');
 		 
 		 $cardDeleteButton.click(function(){
-			 self.deleteCard();
+			 self.removeCard();
 		 });
 		 
 		 $cardDeleteButton.append($cardDeleteSymbol);
