@@ -34,6 +34,7 @@ body {margin: 0;}
   margin-left: 8px;
   list-style: none;
   position: relative;
+  text-align: center;
 }
 .column-add-card {
   cursor: pointer;
@@ -41,7 +42,6 @@ body {margin: 0;}
   margin: 5px 8px;
   display: block;
 }
-
 /* STYLE KARTY */
 .card {
   box-sizing: border-box;
@@ -67,4 +67,24 @@ body {margin: 0;}
   margin-bottom: 5px;
   border: 2px solid lightgrey;
   background-color: lightblue;
+}
+.card-delete.btn {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  cursor: pointer;
+  box-shadow: 1px 1px;
+  border: none;
+  margin-bottom: 20px;
+}
+li.card {
+  background-color: white;
+  box-shadow: 1px 1px;
+  margin: 0 20px;
+  height: 100px;
+  border-bottom: 1px solid black;
+
+}
+.column-card-list {
+  padding: 0;
 }

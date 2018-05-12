@@ -2,6 +2,7 @@
     var self = this;
     this.name = name || 'No name given';
     this.$element = createColumn();
+    this.id = id;
 
     function createColumn() {
         var $column = $('<div>').addClass('column');
@@ -14,20 +15,20 @@
             self.deleteColumn();
         });
         $columnAddCard.click(function (event) {
-						var cardName = prompt("Enter the name of the card");
-						event.preventDefault();
-						$.ajax({
-								url: baseUrl + '/card',
-								method: 'POST',
-								data: {
-								name: cardName,
-								bootcamp_kanban_column_id: self.id
-								},
-								success: function(response) {
-										var card = new Card(response.id, cardName);
-										self.createCard(card);
-								}
-						})
+            var cardName = prompt("Enter the name of the card");
+            event.preventDefault();
+            $.ajax({
+                    url: baseUrl + '/card',
+                    method: 'POST',
+                    data: {
+                    name: cardName,
+                    bootcamp_kanban_column_id: self.id
+                    },
+                    success: function(response) {
+                        var card = new Card(response.id, cardName);
+                        self.createCard(card);
+                    }
+            })
         });
         $column.append($columnTitle)
             .append($columnDelete)
@@ -43,13 +44,14 @@ Column.prototype = {
         this.$element.children('ul').append(card.$element);
     },
     deleteColumn: function () {
-				var self = this;
-				$.ajax({
-					url: baseUrl + '/column/' + self.id,
-					method: 'DELETE',
-					success: function(response) {
-							self.element.remove();
-						}
-				})
+        var self = this;
+        console.log(this);
+        $.ajax({
+            url: baseUrl + '/column/' + self.id,
+            method: 'DELETE',
+            success: function(response) {
+                self.$element.remove();
+            }
+        })
     }
 };
