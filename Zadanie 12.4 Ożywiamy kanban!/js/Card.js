@@ -6,20 +6,19 @@ function Card(id, name) {
 	this.$element = createCard();
 	
 	function createCard() {
-		 var $card = $('<li>').addClass('card');
-		 var $cardDescription = $('<p>').addClass('card-description').text(self.name);
-		 var $cardDeleteButton = $('<button>').addClass('card-delete btn');
-		 var $cardDeleteSymbol = $('<span  class="glyphicon glyphicon-remove" aria-hidden="true" aria-hidden="true"></span>');
-		 
-		 $cardDeleteButton.click(function(){
-			 self.removeCard();
-		 });
-		 
-		 $cardDeleteButton.append($cardDeleteSymbol);
-		 $card.append($cardDeleteButton).append($cardDescription);
-		 
-		 console.log($card);
-		 return $card;
+		var $card = $('<li>').addClass('card');
+		var $cardDescription = $('<p>').addClass('card-description').text(self.name);
+		var $cardDeleteButton = $('<button>').addClass('card-delete btn');
+		var $cardDeleteSymbol = $('<span class="glyphicon glyphicon-remove" aria-hidden="true" aria-hidden="true"></span>');
+		
+		$cardDeleteButton.click(function(){
+			self.removeCard();
+		});
+		
+		$cardDeleteButton.append($cardDeleteSymbol);
+		$card.append($cardDeleteButton).append($cardDescription);
+		
+		return $card;
 	}
 }
 

@@ -69,13 +69,14 @@ body {margin: 0;}
   background-color: lightblue;
 }
 .card-delete.btn {
-  width: 10px;
-  height: 10px;
   background-color: red;
   cursor: pointer;
   box-shadow: 1px 1px;
   border: none;
-  margin-bottom: 20px;
+  display: flex;
+  width: 10px;
+  height: 25px;
+  justify-content: center;
 }
 li.card {
   background-color: white;
